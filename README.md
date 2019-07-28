@@ -1,4 +1,4 @@
-# Rick and Morty Api Implementation
+# Rick and Morty API Implementation
 
 This is a client in React for [RickAndMortyApi](https://rickandmortyapi.com/).
 
