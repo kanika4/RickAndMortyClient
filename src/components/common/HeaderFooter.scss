@@ -1,0 +1,30 @@
+@import '../../utilities/variables';
+
+header, footer {
+  background-color: #282c34;
+  color: $white;
+  padding: 1rem;
+}
+
+header {
+
+  img {
+    height: 8rem;
+    width: 8rem;
+    vertical-align: middle;
+  }
+
+  h1 {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+
+footer {
+  text-align: center;
+
+  .small {
+    font-size: $smallFont;
+    padding: .5rem;
+  }
+}

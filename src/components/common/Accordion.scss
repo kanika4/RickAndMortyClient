@@ -1,0 +1,52 @@
+@import '../../utilities/variables';
+
+.accordion-header {
+  padding: .8rem;
+  border: 1px solid #cbe4f7;
+  background: $accordionHeader;
+  cursor: pointer;
+
+  &.active {
+    + .accordion-body {
+      display: block;
+    }
+
+    span {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      &::before {
+        content: '\2303';
+      }
+    }
+
+  }
+
+  span{
+    float: right;
+    font-size: 2rem;
+    line-height: .5rem;
+
+    &::before {
+      content: '\2304';
+    }
+  }
+}
+
+.accordion-body {
+  display: none;
+  border: 1px solid $accordionHeader;
+  transition: all 0.3s ease-in-out;
+
+  &:first-of-type {
+    display: block;
+  }
+
+  > div {
+    padding: .5rem .8rem;
+  }
+
+  ul {
+    list-style-type: $listStyleType;
+  }
+}
